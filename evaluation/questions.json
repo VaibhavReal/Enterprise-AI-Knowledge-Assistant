@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "question": "What was the company's total revenue for the reported period?",
+    "expected_section_keywords": ["revenue", "total revenue", "net revenue", "income from operations"],
+    "question_type": "factual",
+    "financial_metric": "revenue",
+    "notes": "Should retrieve chunks from income statement or financial highlights section"
+  },
+  {
+    "id": 2,
+    "question": "What factors did management highlight as risks to the business?",
+    "expected_section_keywords": ["risk factors", "risk", "management discussion"],
+    "question_type": "multi_fact",
+    "financial_metric": "risk_factors",
+    "notes": "Should retrieve chunks from Risk Factors section"
+  },
+  {
+    "id": 3,
+    "question": "What is the reported operating income or EBIT?",
+    "expected_section_keywords": ["operating income", "ebit", "operating profit"],
+    "question_type": "factual",
+    "financial_metric": "operating_income",
+    "notes": "Checks operating profitability"
+  },
+  {
+    "id": 4,
+    "question": "What is the Earnings Per Share (EPS) for the year?",
+    "expected_section_keywords": ["eps", "earnings per share", "basic eps", "diluted eps"],
+    "question_type": "factual",
+    "financial_metric": "eps",
+    "notes": "Basic profitability metric"
+  },
+  {
+    "id": 5,
+    "question": "What is the company's total long-term debt position?",
+    "expected_section_keywords": ["long-term debt", "borrowings", "debt", "liabilities"],
+    "question_type": "factual",
+    "financial_metric": "debt",
+    "notes": "Balance sheet metric"
+  },
+  {
+    "id": 6,
+    "question": "How much free cash flow did the company generate?",
+    "expected_section_keywords": ["free cash flow", "operating cash flow", "cash generated"],
+    "question_type": "factual",
+    "financial_metric": "cash_flow",
+    "notes": "Cash flow statement analysis"
+  },
+  {
+    "id": 7,
+    "question": "What was the reported EBITDA?",
+    "expected_section_keywords": ["ebitda", "earnings before interest"],
+    "question_type": "factual",
+    "financial_metric": "ebitda",
+    "notes": "Core operating metric"
+  },
+  {
+    "id": 8,
+    "question": "What were the major capital expenditures (CapEx) this year?",
+    "expected_section_keywords": ["capital expenditure", "capex", "property, plant and equipment", "investing activities"],
+    "question_type": "multi_fact",
+    "financial_metric": "capital_expenditure",
+    "notes": "Investing activities"
+  },
+  {
+    "id": 9,
+    "question": "What are the total operating expenses?",
+    "expected_section_keywords": ["operating expenses", "opex", "selling, general and administrative", "sg&a"],
+    "question_type": "factual",
+    "financial_metric": "operating_expenses",
+    "notes": "Cost structure analysis"
+  },
+  {
+    "id": 10,
+    "question": "What is the gross margin for the period?",
+    "expected_section_keywords": ["gross margin", "gross profit"],
+    "question_type": "factual",
+    "financial_metric": "gross_margin",
+    "notes": "Profitability analysis"
+  },
+  {
+    "id": 11,
+    "question": "Were any dividends declared or paid?",
+    "expected_section_keywords": ["dividend", "dividends paid", "dividend yield"],
+    "question_type": "factual",
+    "financial_metric": "dividend",
+    "notes": "Shareholder returns"
+  },
+  {
+    "id": 12,
+    "question": "What is the management's guidance or outlook for the next fiscal year?",
+    "expected_section_keywords": ["guidance", "outlook", "forward-looking", "future prospects"],
+    "question_type": "summary",
+    "financial_metric": "guidance",
+    "notes": "Future expectations"
+  }
+]
